@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <RootNamespace>FellowOakDicom.Dump</RootNamespace>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>fo-dicom.Dump</AssemblyName>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="fo-dicom.Codecs" Version="5.13.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\FO-DICOM.Core\FO-DICOM.Core.csproj" />
+    <ProjectReference Include="..\..\Platform\FO-DICOM.Imaging.Desktop\FO-DICOM.Imaging.Desktop.csproj" />
+  </ItemGroup>
+
+</Project>
